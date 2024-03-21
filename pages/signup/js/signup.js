@@ -32,7 +32,7 @@ document.getElementById('signupForm').addEventListener('submit', function(event)
         localStorage.setItem('x-api-key', data.token);
 
         // Redirect to home page or any other desired page
-        window.location.href = 'https://geo-naija-locale.netlify.app/pages/home/home.html';
+        window.location.href = 'https://client-locale-app.onrender.com/pages/home/home.html';
     })
     .catch(error => {
         console.error('Error:', error);

@@ -395,7 +395,7 @@ signOutLink.addEventListener('click', function(event) {
     localStorage.removeItem('x-api-key');
 
     // Redirect the user to the sign-in page or any other desired page
-    window.location.href = 'https://geo-naija-locale.netlify.app/index.html'; // Replace with your sign-in page URL
+    window.location.href = 'https://client-locale-app.onrender.com/index.html'; // Replace with your sign-in page URL
 });
 
 
