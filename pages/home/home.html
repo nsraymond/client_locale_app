@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geo-Naija || Homepage</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+    <link rel="stylesheet" href="./styles/home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <div>Geo-Naija</div>
+            </div>
+            <ul class="nav-links">
+                <li><a href="/index.html" id="signout">Sign Out</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h2>Get Nigeria All Nigeria Location Information</h2>
+        <div class="category-section">
+            <label for="getCategory">Select Category to get:</label>
+            <select id="getCategory">
+                <option value="all">All Places</option>
+                <option value="region">Regions</option>
+                <option value="state">States</option>
+                <option value="lga">Local Govt Areas</option>
+            </select>
+            <button id="getInfoBtn">Get Info</button>
+        </div>
+
+        <div class="search-form">
+            <h3>Search for a Place</h3>
+            <div class="search-options">
+                <select id="searchCategory">
+                    <option value="region">Region</option>
+                    <option value="state">State</option>
+                    <option value="lga">Local Government Area (LGA)</option>
+                </select>
+                <input type="text" id="searchInput" placeholder="Enter search term...">
+                <button id="searchBtn"><i class="fas fa-search"></i> Search</button>
+            </div>
+            <div id="searchResults" class="search-results">
+                <!-- Search results will be displayed here -->
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Geo-Naija. All rights reserved.</p>
+    </footer>
+
+    <script src="./js/home.js"></script>
+</body>
+</html>

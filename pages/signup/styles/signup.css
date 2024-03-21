@@ -1,0 +1,98 @@
+/* Resetting default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f2f2f2;
+    min-height: 100vh; /* Ensure page takes at least full viewport height */
+    display: flex;
+    flex-direction: column; /* Arrange content vertically */
+}
+
+.navbar {
+    background-color: #4d545b;
+    color: #fff;
+    padding: 15px 20px;
+}
+
+.logo {
+    font-size: 1rem;
+}
+
+.container {
+    max-width: 600px;
+    width: 480px;
+    margin: 0 auto;
+    padding: 20px;
+    flex-grow: 1; /* Allow container to grow to fill remaining space */
+}
+
+.signup-form {
+    margin-top: 80px;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.signup-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+.signup-btn {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.signup-btn:hover {
+    background-color: #0056b3;
+}
+
+.already {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.already a {
+    color: #007bff;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.already a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #ddd;
+    color: #333;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: auto; /* Push footer to the bottom */
+}
