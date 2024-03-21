@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     function getAllPlaces() {
-        fetchWithToken('http://localhost:5000/api/places', {
+        fetchWithToken('https://geo-locale.onrender.com/api/places', {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json'
@@ -103,7 +103,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
     function getRegions() {
-        fetchWithToken('http://localhost:5000/api/regions', {
+        fetchWithToken('https://geo-locale.onrender.com/api/regions', {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json'
@@ -142,7 +142,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     function getStates() {
-        fetchWithToken('http://localhost:5000/api/states', {
+        fetchWithToken('https://geo-locale.onrender.com/api/states', {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json'
@@ -192,7 +192,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
     
     function getLGAs(state) {
-        fetchWithToken('http://localhost:5000/api/lgas/' + state, {
+        fetchWithToken('https://geo-locale.onrender.com/api/lgas' + state, {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json'
@@ -247,7 +247,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     function searchByState(state) {
-        fetchWithToken('http://localhost:5000/api/search?category=state&query=' + state, {
+        fetchWithToken('https://geo-locale.onrender.com/api/search?category=state&query=' + state, {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json'
@@ -261,7 +261,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     function searchByLGA(lga) {
-        fetchWithToken('http://localhost:5000/api/search?category=lga&query=' + lga, {
+        fetchWithToken('https://geo-locale.onrender.com/api/search?category=lga&query=' + lga, {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json'
@@ -275,7 +275,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     function searchByRegion(region) {
-        fetchWithToken('http://localhost:5000/api/search?category=region&query=' + region, {
+        fetchWithToken('https://geo-locale.onrender.com/api/search?category=region&query=' + region, {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json'
@@ -395,7 +395,7 @@ signOutLink.addEventListener('click', function(event) {
     localStorage.removeItem('x-api-key');
 
     // Redirect the user to the sign-in page or any other desired page
-    window.location.href = 'http://127.0.0.1:5500/index.html'; // Replace with your sign-in page URL
+    window.location.href = 'https://geo-naija-locale.netlify.app/index.html'; // Replace with your sign-in page URL
 });
 
 

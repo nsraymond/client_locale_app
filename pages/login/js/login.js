@@ -11,7 +11,7 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
     });
 
     // Make a POST request to the backend for login
-    fetch('http://localhost:5000/api/login', {
+    fetch('https://geo-locale.onrender.com/api/login', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -32,7 +32,7 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
         localStorage.setItem('x-api-key', data.token);
 
         // Redirect to main page or any other desired page
-        window.location.href = 'http://127.0.0.1:5500/pages/home/home.html';
+        window.location.href = 'https://geo-naija-locale.netlify.app/pages/home/home.html';
     })
     .catch(error => {
         console.error('Error:', error);
